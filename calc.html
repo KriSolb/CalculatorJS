@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>A simple Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/calcStyle.css">
+</head>
+
+<body>
+    <h1 id=titleHeader>A simple Calculator</h1>
+
+    <div class=calcBox>
+        <div class=calcDisplay>
+            <div data-prev-op class=prevOp></div>
+            <div data-curr-op class=currOp></div>
+        </div>
+        <button type="button" data-clear id=clear>C</button>
+        <button type="button" data-delete id=delete>DEL</button>
+        <button type="button" data-operator id=divi>/</button>
+        <button type="button" data-number value=1>1</button>
+        <button type="button" data-number value=2>2</button>
+        <button type="button" data-number value=3>3</button>
+        <button type="button" data-operator id=multi>*</button>
+        <button type="button" data-number value=4>4</button>
+        <button type="button" data-number value=5>5</button>
+        <button type="button" data-number value=6>6</button>
+        <button type="button" data-operator id=plus>+</button>
+        <button type="button" data-number value=7>7</button>
+        <button type="button" data-number value=8>8</button>
+        <button type="button" data-number value=9>9</button>
+        <button type="button" data-operator id=minus>-</button>
+        <button type="button" data-number id=point>.</button>
+        <button type="button" data-number value=0>0</button>
+        <button type="button" data-equals id=equal>=</button>
+    </div>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+</body>
+
+</html>

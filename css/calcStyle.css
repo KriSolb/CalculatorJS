@@ -1,0 +1,69 @@
+* {
+    background-color: rgb(161, 161, 161);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    display: none;
+}
+
+h1 {
+    color: green;
+    background-color: black;
+    padding: 10px;
+    margin: auto;
+    min-width: 15rem;
+    max-width: 25rem;
+}
+
+.calcBox {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 75vh;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: minmax(5rem, auto) repeat(5, 5rem);
+}
+
+.calcBox>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: #cccccc;
+}
+
+.calcBox>button:hover {
+    background-color: #ecebeb;
+}
+
+#clear,
+#equal {
+    grid-column: span 2;
+}
+
+.calcDisplay {
+    grid-column: 1/ -1;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.calcDisplay .prevOp {
+    color: rgba(190, 190, 190, 0.75);
+    font-size: 1.5rem;
+    background-color: black;
+}
+
+.calcDisplay .currOp {
+    color: green;
+    font-size: 2.5rem;
+    background-color: black;
+}
